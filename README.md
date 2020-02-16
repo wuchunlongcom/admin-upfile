@@ -6,7 +6,8 @@
 2、分页
 提交：demo
 
-
+3、实现zip、doc、excel 文件上传、下载。而txt、html img 文件上传后、不是下载，而是直接打开。
+提交：实现zip、doc、excel 文件上传、下载
  
 ```
 
