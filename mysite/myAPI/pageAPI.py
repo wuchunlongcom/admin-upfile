@@ -6,7 +6,7 @@ pageAPI.py  分页类
 wcl6005@126.com    2017.2.5
 """
 
-PAGE_NUM = 12 # 每页显示数
+PAGE_NUM = 2 # 设置每页显示数
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def djangoPage(contact_list, page, num):

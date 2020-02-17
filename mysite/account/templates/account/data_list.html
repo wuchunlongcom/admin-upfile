@@ -7,7 +7,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>序号</th>
                     <th>名称</th>
                     <th>下载</th>
                     
@@ -19,7 +19,7 @@
                     <td>{{ forloop.counter | add:offset }}</td>
                     <td>{{ i.name }}</td>
                     <td> 
-                      <a href="{{ MEDIA_URL }}{{ i.path }}"> {{ i.path|cut:"upfile/" }} </a>
+                      <a href="{{ MEDIA_URL }}{{ i.path }}"><i class="fa fa-download" aria-hidden="true"></i> {{ i.path|cut:"upfile/" }} </a>
                     </td>
                     
                 </tr>

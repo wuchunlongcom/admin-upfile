@@ -12,6 +12,7 @@ FILE_SIZE = 1024*1024*500 # 设定上传文件大小500M
 class FilesAdmin(admin.ModelAdmin):
         
     list_display = ('id','name','path')
+    search_fields = ('path',)  # 添加搜索功能
      
     def save_model(self, request, obj, form, change):
         
