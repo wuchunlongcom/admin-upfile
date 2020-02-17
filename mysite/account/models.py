@@ -2,15 +2,15 @@
 import os
 from django.db import models
 from django.db.models.signals import post_delete
-from django.dispatch import receiver
+from django.dispatch import receiver 
 from django.conf import settings
-
+from myAPI.fileAPI import ExtDown
     
 # 上传文件  设置files以显示图片
 class Files(models.Model):
     name = models.CharField('文件名称', max_length=40)
     path = models.FileField(verbose_name='文件路径', upload_to="upfile/", 
-                            help_text='仅支持文件: zip、doc、excel ')
+                            help_text='仅支持文件类型: %s' %ExtDown)
     
     def __str__(self):
         return self.name

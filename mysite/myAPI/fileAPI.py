@@ -3,6 +3,17 @@ import os
 import datetime
 from .listdictAPI import  listdictAPI
 
+imgExt = ['.bmp', '.gif', '.jpg', '.pic', '.png', '.tif', '.jpeg', '.php',\
+          '.BMP', '.GIF', '.JPG', '.PIC', '.PNG', '.TIF', '.JPEG', '.PHP']
+
+
+# html可以直接下载的文件类型
+ExtDown = ['.zip', '.doc','.docx','.xls','.xlsx', '.rmvb', '.wmv']
+   
+# html可以直接打开浏览、播放的文件类型
+ExtOpen = ['.txt', '.mp4','.pdf']
+ExtOpen.append(imgExt)
+
 class MyFile:
     """
         from myAPI.fileAPI import MyFile
